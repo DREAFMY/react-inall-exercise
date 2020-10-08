@@ -8,24 +8,20 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="home">
-      <div className="homeAbove">
+      <div className="homeTop">
         <h1>在线实用工具</h1>
-        <img className='backGroundImg' src={backGroundURL} alt='backGroundURL'></img>
+        <img className='backGroundImg' src={backGroundURL} alt='backGroundUrl'></img>
       </div>
-
-      <div className="homeBelow">
+      <div className="homeBody">
         <div className="homePageIcon">
-          <img className='calculatorImg' src={calculatorURL} alt='calculatorURL'></img>
-          <img className='timerImg' src={timerURL} alt='timerURL'></img>
+          <img className='calculatorImg' src={calculatorURL} alt='calculatorUrl'></img>
+          <img className='timerImg' src={timerURL} alt='timerUrl'></img>
         </div>
-        <div className="linkBelowIcon">
+        <div className="linkBodyIcon">
           <Link className='countDowntLinktimerIcon' to='/calculator'>计算器</Link>
           <Link className='calculatorLinktimerIcon' to="/timer">倒计时器</Link>
         </div>
-
-
       </div>
-
     </div>);
 };
 

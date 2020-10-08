@@ -1,42 +1,48 @@
 .home{
   margin: -110px auto;
   width: 1300px;
+  .homeTop,.homeBody{
+    width: 90%;
+    background-color: rgba(128, 128, 128, 0.527);
+  }
+  .homeTop{
+    h1{
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        color: white;
+        z-index: 2;
+    }
+    .backGroundImg{
+      margin-top: -50px;
+      width: 100%;
+      filter: brightness(40%);
+      z-index: 1;
+    }
+  }
+  .homeBody{
+    .calculatorImg,.timerImg{
+      width: 15%;;
+      margin: 20px 80px 20px 80px;
+    }
+    .linkBodyIcon{
+      padding: 20px 80px 50px 80px;
+      .countDowntLinktimerIcon,.calculatorLinktimerIcon{
+        color: white;
+        font-size: 30px;
+      }
+      .countDowntLinktimerIcon {
+        margin: 20px 220px 20px 0;
+      }
+    }
+  }
 }
 
-.homeAbove,
-.homeBelow{
-  width: 90%;
-  background-color: rgba(128, 128, 128, 0.527);
-}
-.homeAbove h1{
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  color: white;
-  z-index: 2;
-}
-.backGroundImg{
-  margin-top: -50px;
-  width: 100%;
-  filter: brightness(40%);
-  z-index: 1;
-}
-.calculatorImg,
-.timerImg{
-  width: 15%;;
-  margin: 20px 80px 20px 80px;
-}
 
-.linkBelowIcon{
-  padding: 20px 80px 50px 80px;
-}
 
-.countDowntLinktimerIcon,
-.calculatorLinktimerIcon{
-  color: white;
-  font-size: 30px;
-}
 
-.countDowntLinktimerIcon {
-  margin: 20px 220px 20px 0;
-}
+
+
+
+
+

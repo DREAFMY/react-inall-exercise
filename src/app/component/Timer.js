@@ -43,33 +43,41 @@ class Timer extends Component {
 
     render() {
         return (
-            <div className="timer">
-                <h1>在线倒计时器</h1>
-                <div className='timerInside'>
-                    <div className='timerInput'>
-                        <label>设置时间</label>
-                        <input className="inputSeconds"
-                            type="text"
-                            value={this.state.inputSecond}
-                            onChange={this.handleChange}
-                        />
-                        <button className='startButton'
-                            onClick={this.handleStartTimer}
-                            disabled={this.state.seconds > 0
-                                && this.state.seconds != 'Start'
-                                && this.state.seconds != 'End'}
-                        >Start
-                        </button>
-                    </div>
-
-                    <input className="timerScreen"
-                        type="text" readOnly={true}
-                        value={this.state.seconds}
-                    />
-                </div>
-                <Link className='homeLinkInCal' to="/">回到主页</Link>
+          <div className="timer">
+            <h1>在线倒计时器</h1>
+            <div className="timerInside">
+              <div className="timerInput">
+                <label>设置时间</label>
+                <input
+                  className="inputSeconds"
+                  type="text"
+                  value={this.state.inputSecond}
+                  onChange={this.handleChange}
+                />
+                <button
+                  className="startButton"
+                  onClick={this.handleStartTimer}
+                  disabled={
+                    this.state.seconds > 0 &&
+                    this.state.seconds != "Start" &&
+                    this.state.seconds != "End"
+                  }
+                >
+                  Start
+                </button>
+              </div>
+              <input
+                className="timerScreen"
+                type="text"
+                readOnly={true}
+                value={this.state.seconds}
+              />
             </div>
-        )
+            <Link className="homeLinkInTimer" to="/">
+              回到主页
+            </Link>
+          </div>
+        );
     };
 }
 
